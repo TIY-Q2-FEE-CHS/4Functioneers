@@ -60,17 +60,17 @@ function Transportation(budget) {
 	this.generateTrans = function() {
 
 		if( budget == 25) {
-			var randomTrans1 = Math.floor((Math.random()*1)+1);
+			var randomTrans1 = Math.floor((Math.random()*2));
 			$(".1").append("<h4>" + dateObj.transportation.twentyfive[randomTrans1].text +"</h4>");
 			$(".1").append("<img src=" + dateObj.transportation.twentyfive[randomTrans1].picUrl +  ">");
 
 		} else if(budget == 50){
-			var randomTrans2 = Math.floor((Math.random()*1)+1);
+			var randomTrans2 = Math.floor((Math.random()*2));
 			$(".1").append("<h4>" + dateObj.transportation.fifty[randomTrans2].text +"</h4>");
 			$(".1").append("<img src=" + dateObj.transportation.fifty[randomTrans2].picUrl +  ">");
 
 		} else if(budget == 100) {
-			var randomTrans3 = Math.floor((Math.random()*1)+1);
+			var randomTrans3 = Math.floor((Math.random()*2));
 			$(".1").append("<h4>" + dateObj.transportation.hundred[randomTrans3].text + "</h4>");
 			$(".1").append("<img src=" + dateObj.transportation.hundred[randomTrans3].picUrl +  ">");
 		}
