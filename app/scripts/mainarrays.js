@@ -27,7 +27,7 @@ var dateObj = {
 							 {text: "Your budget allows for dinner at Coleman Public House!", picUrl: "images/restaurants/colemanpublichouse.png"},
 							 {text: "Your budget allows for dinner at EVO!", picUrl: "images/restaurants/EVO.JPG"},
 							 {text: "Your budget allows for dinner at Tsunami!", picUrl: "images/restaurants/tsunami.jpg"},
-							 {text: "Your budget allows for dinner at Bacco!", picUrl: "images/restaurants/bacco.png"},
+							 {text: "Your budget allows for dinner at Bacco!", picUrl: "images/restaurants/bacco.jpg"},
 							 {text: "Your budget allows for dinner at Hymans!", picUrl: "images/restaurants/hymans.jpg"}	
 							],
 				hundred:    [ 
