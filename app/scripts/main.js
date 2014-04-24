@@ -1,4 +1,3 @@
-
 function Activity(budget) {
 	this.budget = budget; 
 

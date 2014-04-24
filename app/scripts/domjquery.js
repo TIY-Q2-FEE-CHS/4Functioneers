@@ -5,7 +5,7 @@ $(document).ready(
 
 	var valTrans = Number($(".transportation").val());
 	var yourTransport = new Transportation(valTrans);
-	var Tranny = yourTransport.generateTrans();
+	var Transit = yourTransport.generateTrans();
 	
 	var valFoodBudget = Number($(".foodbudget").val());
 	var yourFood = new Restaurant (valFoodBudget);
