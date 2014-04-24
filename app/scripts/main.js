@@ -1,4 +1,3 @@
-
 function Activity(budget) {
 	this.budget = budget; 
 
@@ -6,20 +5,22 @@ function Activity(budget) {
 
 		if( budget == 25) {
 			var randomAct1 = Math.floor((Math.random()*4)+1);
-				$(".adventure").append(dateObj.activity.twentyfive[randomAct1].text);
+				$(".3").append("<h4>" + dateObj.activity.twentyfive[randomAct1].text +"</h4>");
+				$(".3").append("<img src=" + dateObj.activity.twentyfive[randomAct1].picUrl +  ">");
 
 
 
 		} else if(budget == 50){
 			var randomAct2 = Math.floor((Math.random()*4)+1);
 			console.log(dateObj.activity.fifty[randomAct2]);
-				$(".adventure").append(dateObj.activity.fifty[randomAct2].text);
+				$(".3").append("<h4>" + dateObj.activity.fifty[randomAct2].text + "</h4>");
+				$(".3").append("<img src=" + dateObj.activity.fifty[randomAct2].picUrl +  ">");
 
 
 		} else if(budget == 100) {
 			var randomAct3 = Math.floor((Math.random()*4)+1);
-				$(".adventure").append(dateObj.activity.hundred[randomAct3].text);
-
+				$(".3").append("<h4>" + dateObj.activity.hundred[randomAct3].text + "</h4>");
+				$(".3").append("<img src=" + dateObj.activity.hundred[randomAct3].picUrl +  ">");
 		}
 	}
 	
@@ -32,18 +33,20 @@ function Restaurant(budget) {
 
 		if( budget == 25) {
 			var randomRest1 = Math.floor((Math.random()*4)+1);
-	$(".eats").append(dateObj.food.twentyfive[randomRest1].text);
+			$(".2").append("<h4>" + dateObj.food.twentyfive[randomRest1].text + "</h4>" );
+			$(".2").append("<img src=" + dateObj.food.twentyfive[randomRest1].picUrl +  ">");
 
 		} else if(budget == 50){
 			var randomRest2 = Math.floor((Math.random()*4)+1);
-				$(".eats").append(dateObj.food.fifty[randomRest2].text);
+				$(".2").append("<h4>" + dateObj.food.fifty[randomRest2].text +"</h4>");
+				$(".2").append("<img src=" + dateObj.food.fifty[randomRest2].picUrl +  ">");
 
 
 
 		} else if(budget == 100) {
 			var randomRest3 = Math.floor((Math.random()*4)+1);
-				$(".eats").append(dateObj.food.hundred[randomRest3].text);
-				$(".date").append("<img src=\"" + dateObj.food.hundred[randomRest1].picUrl + ">");
+				$(".2").append("<h4>" + dateObj.food.hundred[randomRest3].text +"</h4>");
+				$(".2").append("<img src=" + dateObj.food.hundred[randomRest3].picUrl +  ">");
 
 		}
 	}
@@ -56,18 +59,19 @@ function Transportation(budget) {
 	this.generateTrans = function() {
 
 		if( budget == 25) {
-			var randomTrans1 = Math.floor((Math.random()*1)+1);
-			$(".transit").append(dateObj.transportation.hundred[randomTrans1].text);
-
+			var randomTrans1 = Math.floor((Math.random()*2));
+			$(".1").append("<h4>" + dateObj.transportation.twentyfive[randomTrans1].text +"</h4>");
+			$(".1").append("<img src=" + dateObj.transportation.twentyfive[randomTrans1].picUrl +  ">");
 
 		} else if(budget == 50){
-			var randomTrans2 = Math.floor((Math.random()*1)+1);
-			$(".transit").append(dateObj.transportation.hundred[randomTrans2].text);
-
+			var randomTrans2 = Math.floor((Math.random()*2));
+			$(".1").append("<h4>" + dateObj.transportation.fifty[randomTrans2].text +"</h4>");
+			$(".1").append("<img src=" + dateObj.transportation.fifty[randomTrans2].picUrl +  ">");
 
 		} else if(budget == 100) {
-			var randomTrans3 = Math.floor((Math.random()*1)+1);
-			$(".transit").append(dateObj.transportation.hundred[randomTrans3].text);
+			var randomTrans3 = Math.floor((Math.random()*2));
+			$(".1").append("<h4>" + dateObj.transportation.hundred[randomTrans3].text + "</h4>");
+			$(".1").append("<img src=" + dateObj.transportation.hundred[randomTrans3].picUrl +  ">");
 		}
 	}
 	
